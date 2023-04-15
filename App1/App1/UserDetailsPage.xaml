@@ -3,17 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.UserDetailsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout>
-                <Label Text="Name:" />
-                <Label x:Name="name" />
-                <Label Text="Surname:" />
-                <Label x:Name="surname" />
-                <Label Text="Email:" />
-                <Label x:Name="email" />
-                <Label Text="Phone:" />
-                <Label x:Name="phone" />
+        <StackLayout BackgroundColor="#282828" Padding="20" Spacing="15">
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Image x:Name="profile" Margin="0, 40" Source="profile.png" />
             </StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Name:" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+                <Label Grid.Row="0" Grid.Column="1" x:Name="name" Text="John" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Surname:" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+                <Label Grid.Row="1" Grid.Column="1" x:Name="surname" Text="Doe" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Email:" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+                <Label Grid.Row="2" Grid.Column="1" x:Name="email" Text="johndoe@example.com" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Phone:" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+                <Label Grid.Row="3" Grid.Column="1" x:Name="phone" Text="+1 555 555 5555" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Password:" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+                <Label Grid.Row="4" Grid.Column="1" x:Name="password" Text="**********" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand" />
+
+                <Button Grid.Row="5" Grid.Column="1" Text="Edit Profile" BackgroundColor="White" TextColor="#282828" CornerRadius="8" Margin="0,30,0,0" VerticalOptions="CenterAndExpand" />
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

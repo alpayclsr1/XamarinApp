@@ -15,6 +15,18 @@ namespace App1.Screens
         public SplashScreen()
         {
             InitializeComponent();
+
+            
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            await Task.Delay(2000);
+
+            Application.Current.MainPage = new NavigationPage(new ShowUser());
+        }
+    
     }
 }

@@ -38,5 +38,10 @@ namespace App1
         {
             return await database.DeleteAsync(user);
         }
+
+        internal object SearchUsersAsync(string query)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

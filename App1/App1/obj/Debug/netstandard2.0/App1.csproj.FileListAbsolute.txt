@@ -1,8 +1,6 @@
 C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\AddUser.xaml.g.cs
 C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Screens\Page2.xaml.g.cs
 C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\ShowUser.xaml.g.cs
 C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\SplashScreen.xaml.g.cs
 C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\UserDetailsPage.xaml.g.cs
@@ -17,3 +15,4 @@ C:\Users\alpay\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
 C:\Users\alpay\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
 C:\Users\alpay\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
 C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\alpay\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache

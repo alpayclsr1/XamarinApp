@@ -46,6 +46,54 @@ namespace App1
                 var db = new UserDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "user.db3"));
                 await db.DeleteUserAsync(userToDelete);
                 users.Remove(userToDelete);
+                usersListView.ItemsSource = db.GetUsersAsync().Result;
+            }
+        }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddUser());
+        }
+
+        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ShowUser());
+            
+        }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string searchText = searchBar.Text;
+
+            var db = new UserDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "user.db3"));
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+              
+                usersListView.ItemsSource = db.GetUsersAsync().Result;
+            }
+            else
+            {
+
+
+                try
+                {
+                    var filteredUsers = db.GetUsersAsync().Result.Where(u => u.Name.ToLower().Contains(searchText.ToLower())).ToList();
+                    if (usersListView != null && filteredUsers != null)
+                    {
+                        usersListView.ItemsSource = filteredUsers;
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                
+               
+
+
+
+
             }
         }
     }

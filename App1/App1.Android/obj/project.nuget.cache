@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OZBaclIBFStxD7dIiXsXbCKfg9kMWWY1Ck5ef0V9Y7GYvYMLjADGGfvpeMmp+pkKjSBgx6x5c1hblkBgNVFZWg==",
+  "dgSpecHash": "i5MjDu5DsYjXmnxIPxCllw2lcUw5aE+xVWzd8O5yiuaR24bSmc8NJ69oj3NrGyt8HWbrhbLkJHvegpcaIaytDQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\alpay\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\alpay\\.nuget\\packages\\sixlabors.imagesharp\\3.0.1\\sixlabors.imagesharp.3.0.1.nupkg.sha512",
     "C:\\Users\\alpay\\.nuget\\packages\\skiasharp\\2.88.3\\skiasharp.2.88.3.nupkg.sha512",
     "C:\\Users\\alpay\\.nuget\\packages\\skiasharp.nativeassets.android\\2.88.3\\skiasharp.nativeassets.android.2.88.3.nupkg.sha512",
     "C:\\Users\\alpay\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
@@ -71,20 +72,9 @@
     "C:\\Users\\alpay\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
     "C:\\Users\\alpay\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
     "C:\\Users\\alpay\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\alpay\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\alpay\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512",
     "C:\\Users\\alpay\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\alpay\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2291 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n App1.Android -> Xamarin.CommunityToolkit 2.0.5 -> Xamarin.Forms (>= 5.0.0.2291) \r\n App1.Android -> Xamarin.Forms (>= 5.0.0.2196)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "MonoAndroid,Version=v12.0"
-      ]
-    }
-  ]
+  "logs": []
 }

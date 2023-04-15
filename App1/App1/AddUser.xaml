@@ -1,31 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
              x:Class="App1.AddUser">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Add User Page "
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
-            
-            <Label Text="Name" />
-            <Entry Placeholder="Enter your name" x:Name="txtName" />
-            <Label Text="Surname" />
-            <Entry Placeholder="Enter your surname" x:Name="txtSurname" />
-            <Label Text="Email" />
-            <Entry Placeholder="Enter your email address" x:Name="txtEmail" />
-            <Label Text="Phone" />
-            <Entry Placeholder="Enter your phone number" x:Name="txtPhone" />
-            
-            <Label Text="Password" />
-            <Entry Placeholder="Enter your phone password" x:Name="txtPassword" />
 
-            <Button Text="Save" x:Name="saveButton"  Clicked="saveButton_Clicked" />
-            <Button Text="Upload Photo" Clicked="Button_Clicked_1" />
-            <Image x:Name="ProfileImage" Source="placeholder.png"/>
-            
-            
-        </StackLayout>
+
+        <ScrollView>
+            <StackLayout BackgroundColor="#282828" Padding="20">
+                <Label Text="Add User " FontSize="Medium"
+        VerticalOptions="CenterAndExpand"
+        HorizontalOptions="CenterAndExpand"
+        TextColor="White" />
+
+                <Grid Padding="20" Margin="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    
+                    <ImageButton x:Name="ProfileImage" Grid.Row="1" Source="{local:ImageResource App1.Images.profile.png}" Clicked="Button_Clicked_1" BackgroundColor="Transparent" />
+                </Grid>
+
+                <Frame CornerRadius="10" BackgroundColor="White" Margin="0,20,0,0">
+                    <StackLayout Padding="20">
+                        
+                        <Entry Placeholder="Enter your name" x:Name="txtName" />
+                       
+                        <Entry Placeholder="Enter your surname" x:Name="txtSurname" />
+                        
+                        <Entry Placeholder="Enter your email address" x:Name="txtEmail" />
+                        
+                        <Entry Placeholder="Enter your phone number" x:Name="txtPhone" />
+                        
+                        <Entry Placeholder="Enter your phone password" x:Name="txtPassword" />
+                        <Button Text="Save" x:Name="saveButton" BackgroundColor="#282828" TextColor="White" Clicked="saveButton_Clicked" />
+                    </StackLayout>
+                </Frame>
+
+              
+            </StackLayout>
+
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

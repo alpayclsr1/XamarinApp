@@ -6,8 +6,11 @@
              x:Class="App1.ShowUser">
     <ContentPage.Content>
         <StackLayout>
+            <SearchBar x:Name="searchBar" Placeholder="Search Users" TextChanged="SearchBar_TextChanged" />
+
             <ScrollView>
-                <ListView x:Name="usersListView" ItemSelected="OnUserSelected" RowHeight="250">
+                
+                <ListView x:Name="usersListView" ItemSelected="OnUserSelected" RowHeight="200">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell Height="60">
@@ -16,11 +19,11 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
-                                    <StackLayout Grid.Column="0" Padding="10, 0" >
+                                    <StackLayout Grid.Column="0" Padding="10, 0" VerticalOptions="CenterAndExpand">
                                         <Label Text="{Binding Name}" FontSize="Large" />
                                         <Label Text="{Binding Email}" FontSize="Medium" />
                                     </StackLayout>
-                                    <ImageButton Grid.Column="1" Source="{local:ImageResource App1.delete.png}" BackgroundColor="Transparent"
+                                    <ImageButton Grid.Column="1" Source="{local:ImageResource App1.Images.delete.png}" BackgroundColor="Transparent"
                                  Clicked="OnDeleteButtonClicked"
                                  CommandParameter="{Binding .}" 
                                  HeightRequest="32"
@@ -34,9 +37,34 @@
                 </ListView>
 
       
-
+                
             </ScrollView>
             
+            
+            
+               
+
+
+
+            <ImageButton 
+                
+                Source="{local:ImageResource App1.Images.add.png}"
+                         BackgroundColor="Transparent"
+                         HeightRequest="48"
+                         WidthRequest="48"
+                            Margin="16"
+                
+                         
+                         VerticalOptions="End"
+                         HorizontalOptions="End"
+                         
+                         Clicked="ImageButton_Clicked" 
+                />
+
+
+       
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
